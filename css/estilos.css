@@ -54,6 +54,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
 }
 
+.assets-header {
+    text-align: right;
+}
+
 .main-header__contactInfo {
     width: 100%;
 }
@@ -67,6 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-header__contactInfo__adress {
     padding: 10px;
     margin: 0;
+    color: white;
 }
 .main-header [class*="icon-"]::before {
     position: relative;
@@ -253,8 +258,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .today__special__img {
     margin: auto;
-    max-width: 350px;
     width: 100%;
+ 
 
 }
 .today-special__title {
@@ -300,12 +305,37 @@ h1, h2, h3, h4, h5, h6 {
     .logo {
         color: white;
     }
+
+
+    .banner {
+        margin-top: -200px;
+        z-index: -1000;
+    }
+    .banner__content {
+        font-size: 2em;
+    }
+    .column--50 {
+        width: 49%;
+
+    }
+    .column--50-25 {
+        width: 49%;
+    }
+    .column--33 {
+        width: 32%;
+    }
+
+
+    
+    .main__about__description .column:nth-child(2) {
+    padding-left: 20px;
+    font-size: .9em;
+
+}
+
+
     .main-header__contactInfo{
         text-align: right;
-    }
-    .banner {
-        margin-top: -230px;
-        z-index: -1000;
     }
     .main-header__contactInfo__phone{
         background: none;
@@ -313,8 +343,34 @@ h1, h2, h3, h4, h5, h6 {
     .main-header__contactInfo__adress{
         background: none;
     }
-    .column--50 {
-        width: 49%;
+    .main-nav {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+   
+    .today__special__img {
+        
+        height: 300px ;
+        object-fit: cover;
+       
+    }
+
+    .today-special .column {
+        border: 5px solid #ddd;
+        padding: 5px;
 
     }
+    
+}
+@media screen and (min-width:700px) {
+    .today__special__img {
+        height: 400px;
+    }
+
+@media screen and (min-width:900px) {
+    .today__special__img {
+        height: 500px;
+    }
+
+        
+    
 }
